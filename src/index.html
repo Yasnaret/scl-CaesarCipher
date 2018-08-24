@@ -1,0 +1,67 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PROYECTO LABORATORIA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="encabezado">
+        <img src="img/006-search.png" id="logo1">
+        <h1>-Caesar Cipher-</h1>
+        <h2>Mantén a Salvo tus Secretos...</h2>
+    </div>
+    <div></div>
+    <div id="cajaContenedora1">
+        <!--contenedor de textarea de resultado-->
+        <textarea readonly class="textresultados" id="cajaTxt" placeholder="Tu resultado se mostrara aqui"></textarea>
+    </div>
+
+
+    <div id="cajaContenedora2">
+        <!--contenedor de textarea de cifrado-->
+        <h3 class="title-textarea">Ingresa el texto que quieres cifrar</h3>
+        <br>
+        <textarea class="textresultados" id="encriptar"></textarea>
+        <br>
+        <button type="button" id="buttonEncode" class="botones">Encriptar </button>
+
+    </div>
+
+    <div id="cajaContenedora3">
+        <!--contenedor de textarea de descifrado-->
+        <h4 class="title-textarea"> Ingresa el texto que quieres descifrar </h4>
+        <br>
+        <textarea class="textresultados" id="desencriptar"></textarea>
+        <br>
+        <button type="button" id="buttonDecode" class="botones">Desencriptar</button>
+    </div>
+
+
+    <div id="cajaContenedora4">
+        <h5 class="title-textarea"> Selecciona un número de posiciones</h5>
+        <br>
+        <input type="number" id="key" class="textresultados" min="0" value="0">
+        <br>
+    </div>
+
+    <div id="cajaContenedora5">
+        <button type="button" id="buttonClear" class="botones">Limpiar</button>
+    </div>
+
+
+
+    <script src="index.js"></script>
+    <script src="cipher.js"></script>
+</body>
+
+</html>
